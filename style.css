@@ -37,6 +37,12 @@ nav ul li{
   margin-left: 40px;
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
 .content{
   text-align: center;
 }
@@ -45,6 +51,11 @@ nav ul li{
   font-size: 160px;
   color: #ffffff;
   font-weight: 600;
+}
+
+.content h1:hover{
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
 }
 
 .content a{
@@ -58,3 +69,30 @@ nav ul li{
   margin-top: 20px;
 }
 
+.content a:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
